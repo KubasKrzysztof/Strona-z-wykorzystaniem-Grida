@@ -1,4 +1,23 @@
+@use './colors' as *;
+@use './animations' as *;
+@use './size/index' as *;
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: 'Cinzel', serif;
 	font-family: 'Raleway', sans-serif;
+	font-size: 1.6rem;
+	color: $white;
+	background-color: $dark;
 }
