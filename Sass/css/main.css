@@ -94,4 +94,52 @@ h1.company-name {
 .header .hamburger-inner, .header .hamburger-inner::before, .header .hamburger-inner::after {
   background-color: #fff;
   z-index: 500;
+}
+.header .nav-mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  transform: translateX(-102%);
+  transition: transforms 0.3s;
+  z-index: 10;
+}
+.header .nav-mobile--acvite {
+  transform: translateX(0%);
+}
+.header .nav-deskop {
+  display: none;
+}
+.header .nav__link {
+  position: relative;
+  display: inline-block;
+  margin: 0.5em;
+  padding: 0.5em;
+  font-size: 2.3rem;
+  color: #191919;
+  text-transform: uppercase;
+  text-decoration: none;
+  transform: color 0.3s;
+}
+.header .nav__link:hover {
+  color: #d6c78e;
+}
+.header .nav__link::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 1px solid #d6c78e;
+  opacity: 0;
+}
+.header .nav__link:hover::before {
+  animation: pulse 1s;
 }/*# sourceMappingURL=main.css.map */
