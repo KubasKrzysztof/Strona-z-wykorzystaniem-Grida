@@ -1,6 +1,7 @@
 @use './colors' as *;
 @use './animations' as *;
-@use './size/index' as *;
+
+
 
 *,
 *::after,
@@ -140,19 +141,8 @@ h1.company-name {
 			&:hover {
 				color: $gold;
 			}
-			&::before {
-				position: absolute;
-				top: 0;
-				left: 0;
-				content: '';
-				width: 100%;
-				height: 100%;
-				border: 1px solid $gold;
-				opacity: 0;
-			}
-			&:hover::before {
-				animation: pulse 1s;
-			}
+			
 		}
 	}
 }
+@import './size/large';
