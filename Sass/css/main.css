@@ -139,7 +139,7 @@ h1.company-name {
 .header .nav-mobile--active {
   transform: translateX(0%);
 }
-.header .nav-deskop {
+.header .nav-desktop {
   display: none;
 }
 .header .nav__link {
