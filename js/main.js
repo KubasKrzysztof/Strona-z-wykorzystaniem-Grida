@@ -1,10 +1,23 @@
 const navMobile = document.querySelector('.nav-mobile')
 const navBtn = document.querySelector('.hamburger')
 const footerYear = document.querySelector('.footer__year')
+const allNavItem = document.querySelectorAll('.nav__link')
 
 const handleNav = () => {
 	navBtn.classList.toggle('is-active')
 	navMobile.classList.toggle('nav-mobile--active')
+
+	allNavItem.forEach(item => {
+		item.addEventListener('click', () => {
+			navMobile.classList.remove('nav-mobile--active')
+		})
+	})
+
+	allNavItem.forEach(item => {
+		item.addEventListener('click', () => {
+			navBtn.classList.remove('is-active')
+		})
+	})
 }
 
 navBtn.addEventListener('click', handleNav)

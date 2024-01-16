@@ -133,7 +133,7 @@ h1.company-name {
   display: none;
 }
 .header .hamburger {
-  position: absolute;
+  position: fixed;
   top: 3em;
   left: 1em;
   transform: translateY(-50%);
@@ -144,7 +144,7 @@ h1.company-name {
   z-index: 500;
 }
 .header .nav-mobile {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
